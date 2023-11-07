@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Pet-Tech",
-    "slug": "Pet-Tech",
+    "slug": "pettech",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,10 +21,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.shayan_mehmood.pettech"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d1a57e07-5e1b-4eff-9825-5c2c8814e91b"
+      }
+    },
+    "owner": "shayan_mehmood"
   }
 }
