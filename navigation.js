@@ -3,6 +3,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import LoginScreen from './components/LoginScreen';
 import SignupScreen from './components/SignupScreen';
 import HomeScreen from './components/HomeScreen';
+import CatBreedIdentifier from './components/CatBreedIdentifier';
 
 const Stack = createNativeStackNavigator();
 
@@ -24,6 +25,8 @@ function AppNavigator() {
         <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="Signup" component={SignupScreen} />
         <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
+        <Stack.Screen name="ImagePicker" component={CatBreedIdentifier} options={{ headerShown: false }} />
+
       </Stack.Navigator>
     </NavigationContainer>
   );

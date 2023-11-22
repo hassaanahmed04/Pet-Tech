@@ -1,5 +1,6 @@
+// PetIdentification.js
 import React from "react";
-import { View, Text, Image, StyleSheet, Pressable, Dimensions } from "react-native";
+import { View, Text, Image, StyleSheet, Pressable } from "react-native";
 import newLogin from "../assets/new_login.png";
 
 function PetIdentification({ onCatModel, onDogModel }) {
@@ -9,7 +10,7 @@ function PetIdentification({ onCatModel, onDogModel }) {
         <Image source={newLogin} style={styles.image} />
       </View>
       <View style={styles.contentContainer}>
-      <Text style={styles.title}>Identify Your Pet</Text>
+        <Text style={styles.title}>Identify Your Pet</Text>
 
         <Text style={styles.contentText}>
           Welcome to the Pet Identification tool. Follow these steps to identify your pet:
@@ -21,7 +22,7 @@ function PetIdentification({ onCatModel, onDogModel }) {
           2. Choose to upload an image or capture a photo of your pet.
         </Text>
         <Text style={styles.contentText}>
-          3. Get results, breed Identification and more pet recomendations.
+          3. Get results, breed Identification and more pet recommendations.
         </Text>
       </View>
       <View style={styles.optionsContainer}>
@@ -39,7 +40,6 @@ function PetIdentification({ onCatModel, onDogModel }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#000",
     alignItems: "center",
     justifyContent: "space-between",
     padding: 20,
@@ -47,15 +47,17 @@ const styles = StyleSheet.create({
   header: {
     flexDirection: "row",
     alignItems: "center",
+    marginBottom: 20,
   },
   title: {
-    fontSize: Dimensions.get("window").width > 360 ? 24 : 20,
+    fontSize: 24,
     fontWeight: "bold",
     color: "#fff",
+    marginBottom: 10,
   },
   image: {
-    width: Dimensions.get("window").width > 360 ? 100 : 80,
-    height: Dimensions.get("window").width > 360 ? 100 : 80,
+    width: 100,
+    height: 100,
     borderRadius: 50,
   },
   contentContainer: {
@@ -64,7 +66,7 @@ const styles = StyleSheet.create({
   },
   contentText: {
     color: "#fff",
-    fontSize: Dimensions.get("window").width > 360 ? 16 : 14,
+    fontSize: 16,
     marginBottom: 10,
   },
   optionsContainer: {
