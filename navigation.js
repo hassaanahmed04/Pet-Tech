@@ -4,6 +4,7 @@ import LoginScreen from './components/LoginScreen';
 import SignupScreen from './components/SignupScreen';
 import HomeScreen from './components/HomeScreen';
 import CatBreedIdentifier from './components/CatBreedIdentifier';
+import PetIdentification from './components/PetIdentification';
 
 const Stack = createNativeStackNavigator();
 
@@ -14,9 +15,9 @@ function AppNavigator() {
         initialRouteName="Login"
         screenOptions={{
           headerStyle: {
-            backgroundColor: '#FF8C80', // Change the background color of the header
+            backgroundColor: '#FF8C80', 
           },
-          headerTintColor: '#fff', // Change the text color of the header
+          headerTintColor: '#fff', 
           headerTitleStyle: {
             fontWeight: 'bold',
           },
@@ -24,8 +25,9 @@ function AppNavigator() {
       >
         <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="Signup" component={SignupScreen} />
+        <Stack.Screen name="PetIdentification" component={PetIdentification} />
         <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
-        <Stack.Screen name="ImagePicker" component={CatBreedIdentifier} options={{ headerShown: false }} />
+        <Stack.Screen name="CatBreedIdentifier" component={CatBreedIdentifier} options={{ headerShown: false }} />
 
       </Stack.Navigator>
     </NavigationContainer>
